@@ -1,0 +1,42 @@
+{
+  "seed": 42,
+  "image_size": 128,
+  "batch_size": 32,
+  "train_mean": [
+    0.3439007467932198,
+    0.37995412567515396,
+    0.40754934092415773
+  ],
+  "train_std": [
+    0.20242460536699797,
+    0.13668293748114527,
+    0.11540833375611878
+  ],
+  "num_classes": 10,
+  "classes": [
+    "AnnualCrop",
+    "Forest",
+    "HerbaceousVegetation",
+    "Highway",
+    "Industrial",
+    "Pasture",
+    "PermanentCrop",
+    "Residential",
+    "River",
+    "SeaLake"
+  ],
+  "augmentations_train": [
+    "Resize(128,128)",
+    "HorizontalFlip(p=0.5)",
+    "VerticalFlip(p=0.5)",
+    "RandomRotate90(p=0.5)",
+    "RandomBrightnessContrast(0.15,0.15,p=0.5)",
+    "Normalize(train_mean,train_std)",
+    "ToTensorV2()"
+  ],
+  "augmentations_eval": [
+    "Resize(128,128)",
+    "Normalize(train_mean,train_std)",
+    "ToTensorV2()"
+  ]
+}

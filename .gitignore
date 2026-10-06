@@ -1,0 +1,8 @@
+*.pt
+*.pth
+*.pkl
+data/
+segmentation/
+change_detection/
+.ipynb_checkpoints/
+__pycache__/
