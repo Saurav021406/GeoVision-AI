@@ -1,8 +1,14 @@
 *.pt
 *.pth
 *.pkl
+*.zip
 data/
 segmentation/
 change_detection/
+multi_disaster/data/
+.virtual_documents/
 .ipynb_checkpoints/
 __pycache__/
+streamlit.log
+cloudflared
+eurosat_samples/
